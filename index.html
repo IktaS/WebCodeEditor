@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="lib/codemirror/lib/codemirror.js"></script>
     <link rel="stylesheet" href="lib/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="lib/codemirror/theme/dracula.css">
+    <script src="lib/codemirror/mode/javascript/javascript.js"></script>
+    <script src="lib/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="lib/codemirror/mode/css/css.js"></script>
     <title>Try Making a Code Editor</title>
 </head>
 <body>
-    
+    <div class="codeBlocks">
+        <div class="codeBlock">
+            <textarea id="html-codeblock">HTML codes</textarea>
+        </div>
+        <div class="codeBlock">
+            <textarea id="css-codeblock">CSS codes</textarea>
+        </div>
+        <div class="codeBlock">
+            <textarea id="js-codeblock">function init()</textarea>
+        </div>
+    <script src="js/index.js"></script>
+    </div>
 </body>
 </html>

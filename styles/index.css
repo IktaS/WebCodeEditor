@@ -1,0 +1,6 @@
+.codeBlocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 50px;
+    gap: 1em;
+}
