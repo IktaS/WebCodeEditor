@@ -26,21 +26,20 @@ htmlcodeblock.value = "<h1>Wow</h1>";
 csscodeblock.value = "body {\n\tbackground-color: aqua;\n}";
 jscodeblock.value = "";
 
-// function compile() {
-//     document.body.onkeyup = function() {
-//         if (iframe && iframe.contentWindow) {
-//             iframe.contentWindow.postMessage(
-//                 htmlcodeblock.value+
-//                 "<style>"+
-//                 csscodeblock.value+
-//                 "</style>"+
-//                 "<script>"+
-//                 jscodeblock.value+
-//                 "</script>", '*'
-//             );
-//         }
-//     };
-// }
+function compile() {
+    var pageDoc = page.contentDocument;
+    console.log(pageDoc);
+    pageDoc.open();
+    pageDoc.write(htmlcodeblock.value + 
+                    "<style>" + 
+                    csscodeblock.value + 
+                    "</style>" +
+                    "<script>" +
+                    jscodeblock.value +
+                    "</script>"
+    );
+    pageDoc.close();
+}
 
-// compile();
+compile();
 

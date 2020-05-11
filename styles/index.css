@@ -8,8 +8,10 @@
 .content-container {
     display: grid;
     grid-template-columns: 20% 1fr 20%;
+    column-gap: 2px;
 }
 
 .page-container {
     border: none;
+    height: 100%;
 }

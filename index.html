@@ -14,9 +14,11 @@
 </head>
 <body>
     <div class="content-container">
-        <div class="explanation-container">Explanation</div>
+        <div class="explanation-container" markdown="1">
+            ## Explanation
+        </div>
         <iframe class="page-container" id="page"></iframe>
-        <div class="codeBlocks">
+        <div class="codeBlocks" onkeyup="compile()">
             <div class="codeBlock">
                 <textarea id="html-codeblock">HTML codes</textarea>
             </div>
