@@ -2,7 +2,7 @@ var htmlcodeblock = document.getElementById("html-codeblock");
 var csscodeblock = document.getElementById("css-codeblock");
 var jscodeblock = document.getElementById("js-codeblock");
 
-var page = document.getElementById("page").contentWindow.document;
+var page = document.getElementById("page");
 
 var htmleditor = CodeMirror.fromTextArea(htmlcodeblock,{
     lineNumbers: true,
@@ -21,4 +21,26 @@ var jseditor = CodeMirror.fromTextArea(jscodeblock,{
     mode: "javascript",
     theme: "dracula",
 });
+
+htmlcodeblock.value = "<h1>Wow</h1>";
+csscodeblock.value = "body {\n\tbackground-color: aqua;\n}";
+jscodeblock.value = "";
+
+// function compile() {
+//     document.body.onkeyup = function() {
+//         if (iframe && iframe.contentWindow) {
+//             iframe.contentWindow.postMessage(
+//                 htmlcodeblock.value+
+//                 "<style>"+
+//                 csscodeblock.value+
+//                 "</style>"+
+//                 "<script>"+
+//                 jscodeblock.value+
+//                 "</script>", '*'
+//             );
+//         }
+//     };
+// }
+
+// compile();
 
