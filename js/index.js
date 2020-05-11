@@ -2,6 +2,8 @@ var htmlcodeblock = document.getElementById("html-codeblock");
 var csscodeblock = document.getElementById("css-codeblock");
 var jscodeblock = document.getElementById("js-codeblock");
 
+var page = document.getElementById("page").contentWindow.document;
+
 var htmleditor = CodeMirror.fromTextArea(htmlcodeblock,{
     lineNumbers: true,
     mode: "htmlmixed",
@@ -19,3 +21,4 @@ var jseditor = CodeMirror.fromTextArea(jscodeblock,{
     mode: "javascript",
     theme: "dracula",
 });
+

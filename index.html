@@ -13,17 +13,21 @@
     <title>Try Making a Code Editor</title>
 </head>
 <body>
-    <div class="codeBlocks">
-        <div class="codeBlock">
-            <textarea id="html-codeblock">HTML codes</textarea>
+    <div class="content-container">
+        <div class="explanation-container">Explanation</div>
+        <iframe class="page-container" id="page"></iframe>
+        <div class="codeBlocks">
+            <div class="codeBlock">
+                <textarea id="html-codeblock">HTML codes</textarea>
+            </div>
+            <div class="codeBlock">
+                <textarea id="css-codeblock">CSS codes</textarea>
+            </div>
+            <div class="codeBlock">
+                <textarea id="js-codeblock">function init()</textarea>
+            </div>
+            <script src="js/index.js"></script>
         </div>
-        <div class="codeBlock">
-            <textarea id="css-codeblock">CSS codes</textarea>
-        </div>
-        <div class="codeBlock">
-            <textarea id="js-codeblock">function init()</textarea>
-        </div>
-    <script src="js/index.js"></script>
     </div>
 </body>
 </html>

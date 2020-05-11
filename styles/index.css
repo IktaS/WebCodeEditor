@@ -1,6 +1,11 @@
 .codeBlocks {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     height: 50px;
-    gap: 1em;
+    gap: 1px;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
 }
