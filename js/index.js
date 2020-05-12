@@ -22,11 +22,10 @@ var jseditor = CodeMirror.fromTextArea(jscodeblock,{
     theme: "dracula",
 });
 
-htmlcodeblock.value = "<h1>Wow</h1>";
-csscodeblock.value = "body {\n\tbackground-color: aqua;\n}";
-jscodeblock.value = "";
-
 function compile() {
+    htmleditor.save();
+    csseditor.save();
+    jseditor.save();    
     var pageDoc = page.contentDocument;
     console.log(pageDoc);
     pageDoc.open();
